@@ -9,7 +9,7 @@ int main(void) {
 
 	initFlags(WIDTH, HEIGHT, flags);
 
-	placeStage(WIDTH, HEIGHT); // 가로 : 세로 = 2 : 1 정도 비율로 해야 정사각형 처럼 나옴.
+	placeStage(WIDTH, HEIGHT); // 가로 : 세로 = 2 : 1 정도 비율로 해야 정사각형 처럼 나옴!!!!!
 	placeFlag(flags, FLAG_COUNT);
 	gotoxy(WIDTH, HEIGHT);
 
