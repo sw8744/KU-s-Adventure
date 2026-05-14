@@ -8,7 +8,7 @@
 
 // visual.c
 extern void placeStage(int width, int height);
-extern void placeFlag(struct flag* flags, int size); \
+extern void placeFlag(struct flag* flags, int size); 
 extern void placePlayer(int x, int y);
 
 // flag.c

@@ -11,7 +11,6 @@ void initFlags(int width_max, int height_max, struct flag* flags) {
 				break;
 			}
 		}
-		
 	}
 }
 

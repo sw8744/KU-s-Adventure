@@ -11,7 +11,7 @@ void placeStage(int width, int height) {
 
 	for (int i = 1; i < height - 1; i++) {
 		printf("%s", STAGE_WALL);
-		for (int i = 1; i < width - 1; i++) {
+		for (int j = 1; j < width - 1; j++) {
 			printf(" ");
 		}
 		printf("%s\n", STAGE_WALL);
