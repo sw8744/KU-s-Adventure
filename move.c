@@ -1,7 +1,7 @@
 #include "header.h"
 #include "settings.h"
 
-void gotoxy(int x, int y) {
+void goToXY(int x, int y) {
 	COORD Cur = { x, y };
 	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), Cur);
 }

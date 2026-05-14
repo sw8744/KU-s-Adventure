@@ -16,7 +16,7 @@ extern void initFlags(int width_max, int height_max, struct flag* flags);
 extern int checkConflictFlag(int index, struct flag* flags);
 
 // move.c
-extern void gotoxy(int x, int y);
+extern void goToXY(int x, int y);
 extern void movePlayer(int* x, int* y, struct flag* flags);
 
 // util.c

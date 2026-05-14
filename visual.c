@@ -24,13 +24,13 @@ void placeStage(int width, int height) {
 
 void placeFlag(struct flag* flags, int size) {
 	for (int i = 0; i < size; i++) {
-		gotoxy(flags[i].x, flags[i].y);
+		goToXY(flags[i].x, flags[i].y);
 		printf("%s", FLAG);
 	}
 }
 
 void placePlayer(int x, int y) {
 	printf(" ");
-	gotoxy(x, y);
+	goToXY(x, y);
 	printf("%s\b", PLAYER);
 }

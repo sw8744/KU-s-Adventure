@@ -11,7 +11,7 @@ int main(void) {
 
 	placeStage(WIDTH, HEIGHT); // 가로 : 세로 = 2 : 1 정도 비율로 해야 정사각형 처럼 나옴!?
 	placeFlag(flags, FLAG_COUNT);
-	gotoxy(WIDTH, HEIGHT);
+	goToXY(WIDTH, HEIGHT);
 
 	while (1) {
 		placePlayer(x, y);
