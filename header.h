@@ -27,6 +27,10 @@ extern void clear();
 extern int isNotMove(int x, int y, struct flag* flags);
 extern int selectValue(struct coord* coords, int length);
 
+//가위바위보
+extern void printHand(int* k);
+extern void rockScissorsPaper();
+
 // structures
 struct flag {
 	int x;

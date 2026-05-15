@@ -2,6 +2,8 @@
 #include "settings.h"
 
 int main(void) {
+
+	rockScissorsPaper();
 	struct flag flags[FLAG_COUNT];
 	int x = DEFAULT_PLAYER_X, y = DEFAULT_PLAYER_Y - 1;
 
