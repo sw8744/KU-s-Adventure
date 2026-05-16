@@ -30,15 +30,18 @@
     <ClCompile Include="move.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="game\rockScissorsPaper.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ascii.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="settings.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="ascii.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

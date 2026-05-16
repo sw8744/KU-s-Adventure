@@ -15,6 +15,22 @@ void printBox(int start_x, int start_y, char* value) {
 	goToXY(start_x, start_y + 2);
 }
 
+void printAsciiXY(char* ascii, int x, int y) {
+	goToXY(x, y);
+	int line = 0;
+	for (int i = 0; i >= 0; i++) {
+		if (ascii[i] == '\0') {
+			break;
+		}
+		if (ascii[i] == '\n') {
+			goToXY(x, y + line);
+			line++;
+			continue;
+		}
+		printf("%c", ascii[i]);
+	}
+}
+
 void placeStage(int width, int height) {
 	for (int i = 0; i < width; i++) {
 		printf("%s", STAGE_WALL);

@@ -22,10 +22,12 @@ int main(void) {
 		placeFlag(flags, FLAG_COUNT);
 		goToXY(WIDTH, HEIGHT);
 
-		while (1) {
+		rockScissorsPaper();
+
+		/*while (1) {
 			placePlayer(x, y);
 			movePlayer(&x, &y, flags);
-		}
+		}*/
 	}
 	return 0;
 }

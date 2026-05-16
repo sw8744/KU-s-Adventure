@@ -9,6 +9,15 @@ void clear() {
 	system("cls");
 }
 
+void clear_pos(struct coord start_coord, struct coord end_coord) {
+	for (int i = 0; i <= end_coord.x - start_coord.x; i++) {
+		for (int j = 0; j <= end_coord.y - start_coord.y; j++) {
+			goToXY(start_coord.x + i, start_coord.y + j);
+			printf("\b ");
+		}
+	}
+}
+
 int isNotMove(int x, int y, struct flag* flags) {
 	if (x == WIDTH - 1 || x == 0 || y == HEIGHT - 1 || y == 0) {
 		return 1;
