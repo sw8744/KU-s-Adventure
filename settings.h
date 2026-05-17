@@ -6,5 +6,9 @@
 #define DEFAULT_PLAYER_Y HEIGHT - 1
 
 #define STAGE_WALL "#"
-#define FLAG "¢º"
-#define PLAYER "¡Ü"
+#define FLAG "Â¢Âº"
+#define PLAYER "Â¡Ãœ"
+
+#define NUM_SENTENCES 8
+#define MAX_LENGTH 100
+#define TIME_LIMIT 10.0 
