@@ -23,22 +23,21 @@ void typingPractice() {
     if (spaceToStart()) {
         clear();
 
-        printf("[문제] %s\n", sentences[randomIndex]);
-        printf("입력: ");
+        printf("[ 문제 ] %s\n", sentences[randomIndex]);
+        printf("[ 입력 ] ");
 
         time_t startTime = time(NULL);
 
-        fgets(typing, sizeof(typing), stdin);
-        typing[strcspn(typing, "\n")] = '\0';
+        gets_s(typing, MAX_LENGTH);
 
         time_t endTime = time(NULL);
-        double duration = difftime(endTime, startTime);
+        int duration = endTime - startTime;
 
         printf("\n[ 결과 ]\n");
         if (duration > TIME_LIMIT)
-            printf("실패! 시간 초과! (%.0f초 걸림 / 10초 제한)\n", duration);
+            printf("실패! 시간 초과! (%d초 걸림 / 10초 제한)\n", duration);
         else if (strcmp(sentences[randomIndex], typing) == 0)
-            printf("성공! (%.0f초 걸림)\n", duration);
+            printf("성공! (%d초 걸림)\n", duration);
         else
             printf("실패! 오타가 있습니다! (문장과 정확히 일치해야 합니다)\n");
 
