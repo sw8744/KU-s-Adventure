@@ -60,7 +60,7 @@ void sniper() {
                 if (_kbhit()) {
                     char ch = _getch();
                     if (ch == 13) {
-                        if (x == 7) {
+                        if (y == 5) {
                             isVerticalAligned = 1;
                         }
                         break;
