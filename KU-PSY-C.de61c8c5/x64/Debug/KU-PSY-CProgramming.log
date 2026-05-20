@@ -1,2 +1,16 @@
-﻿  chamCham.c
+﻿  flag.c
+  game.c
+  chamCham.c
+  dud.c
+  holZzak.c
+  itemQuickPick.c
+  rockScissorsPaper.c
+  sniper.c
+  typingPractice.c
+C:\Users\doyun\KU-PSY-CProgramming\game\typingPractice.c(34,32): warning C4244: '초기화 중': 'time_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  main.c
+  move.c
+  util.c
+  visual.c
+  코드를 생성하고 있습니다...
   KU-PSY-CProgramming.vcxproj -> C:\Users\doyun\KU-PSY-CProgramming\x64\Debug\KU-PSY-CProgramming.exe

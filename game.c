@@ -23,7 +23,7 @@ void gameStarter(int gameID) {
 		break;
 	}
 	case 3: {
-		// TODO: È¦Â¦ °ü·Ã ÀÛ¾÷ ÇÊ¿ä
+		holZzak();
 		break;
 	}
 	case 4: {

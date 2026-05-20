@@ -55,6 +55,12 @@ extern char cham_up[];
 extern char cham_right[];
 extern char cham_down[];
 extern char cham_left[];
+const char cup_left[];
+const char cup[];
+const char cup_right[];
+const char coin_one[];
+const char coin_two[];
+
 
 // games
 // dud.c
@@ -72,6 +78,12 @@ extern void itemQuickPick();
 
 // typingPractice.c
 extern void typingPractice();
+
+//chamCham.c
+extern void chamCham();
+
+//holZzak.c
+extern void holZzak();
 
 
 // structures
