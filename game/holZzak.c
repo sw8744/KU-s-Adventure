@@ -10,8 +10,7 @@ int isHolZzakSame(int chi, int a) {
 }
 
 void openCup(int a) {
-	if (a == 1)
-	{
+	if (a == 1){
 		for (int i = 0; i < 2; i++) {
 			clear();
 			printf("%s", cup);
@@ -29,8 +28,7 @@ void openCup(int a) {
 		clear();
 		printf("%s", coin_one);
 	}
-	else
-	{
+	else{
 		for (int i = 0; i < 2; i++) {
 			clear();
 			printf("%s", cup);
@@ -59,8 +57,7 @@ void holZzak(void) {
 	printf("홀, 짝 둘 중 하나를 고르세요. 행운을 빕니다!!\n\n");
 	printf("시작하려면 스페이스를 누르세요. \n나가려면 ESC를 누르세요.\n");
 
-	if (spaceToStart())
-	{
+	if (spaceToStart()){
 		coin = rand() % 2 + 1;
 
 		clear();
@@ -78,18 +75,15 @@ void holZzak(void) {
 				continue;
 			}
 
-			if ((choice == 1) || (choice == 2))
-			{
+			if ((choice == 1) || (choice == 2)){
 				s = isHolZzakSame(coin, choice);
-				if (s == 1)
-				{
+				if (s == 1) {
 					clear();
 					openCup(coin);
 					goToXY(0, 10);
 					printf("성공!!\n\n");
 				}
-				else
-				{
+				else {
 					clear();
 					openCup(coin);
 					goToXY(0, 10);
