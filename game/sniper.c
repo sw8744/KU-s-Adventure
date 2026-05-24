@@ -1,7 +1,7 @@
 #include "../header.h"
 #include "../settings.h"
 
-void sniper() {
+int sniper() {
     clear();
 
     int isHorizontalAligned = 0, isVerticalAligned = 0;

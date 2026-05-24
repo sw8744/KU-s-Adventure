@@ -77,7 +77,7 @@ int checkItem(int x, int y, struct flag* items, int size) {
 	return 0;
 }
 
-void itemQuickPick() {
+int itemQuickPick() {
     clear();
     printf("[ 먹이 빨리 먹기 ]\n\n");
     printf("방향키를 눌러 자라를 조종해 먹이를 모두 먹으세요!\n\n");
@@ -96,5 +96,6 @@ void itemQuickPick() {
 		printf("성공!\n\n");
 		printf("나가려면 ESC 키를 누르세요.\n");
 		escToExit();
+		return 1;
     }
 }

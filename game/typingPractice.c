@@ -1,7 +1,7 @@
 ﻿#include "../header.h"
 #include "../settings.h"
 
-void typingPractice() {
+int typingPractice() {
     clear();
     char sentences[NUM_SENTENCES][MAX_LENGTH] = {
         "변수의 범위는 변수가 사용 가능한 가시성을 뜻한다.",

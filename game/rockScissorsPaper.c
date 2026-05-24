@@ -27,7 +27,7 @@ void printHand(int k, int isReverse) {
 	}
 }
 
-void rockScissorsPaper() {
+int rockScissorsPaper() {
 	clear();
 	printf("[ 자라와 가위바위보 ]\n\n");
 	printf("자라와 가위바위보를 진행하세요!\n");
@@ -83,6 +83,7 @@ void rockScissorsPaper() {
 		Sleep(3000);
 		printHand(com, 0);
 
+		int returnValue = 0;
 		if ((com - play == 1) || (com - play == -2)) { // 패배
 
 			printf("자라 : 너의 패배야                  \n");
@@ -92,11 +93,13 @@ void rockScissorsPaper() {
 		}
 		else if ((com - play == -1) || (com - play == 2)) {
 			printf("자라 : 너의 승리야                    \n");
+			returnValue = 1;
 		}
 
 		goToXY(0, 11);
 		printf("ESC 키를 누르면 나가져.");
 		escToExit();
+		return returnValue;
 	}
 	clear();
 }

@@ -48,9 +48,10 @@ void openCup(int a) {
 	}
 }
 
-void holZzak(void) {
+int holZzak(void) {
 
 	int coin, choice, s;
+	int returnValue = 0;
 
 	clear();
 	printf("[ 홀짝 게임 ]\n\n");
@@ -74,7 +75,7 @@ void holZzak(void) {
 				while (getchar() != '\n');
 				continue;
 			}
-
+			
 			if ((choice == 1) || (choice == 2)){
 				s = isHolZzakSame(coin, choice);
 				if (s == 1) {
@@ -82,6 +83,7 @@ void holZzak(void) {
 					openCup(coin);
 					goToXY(0, 10);
 					printf("성공!!\n\n");
+					returnValue = 1;
 				}
 				else {
 					clear();
@@ -94,11 +96,9 @@ void holZzak(void) {
 
 		} while (1);
 
-
-
-
 		printf("나가려면 ESC 키를 누르세요.");
 		escToExit();
+		return returnValue;
 	}
 
 

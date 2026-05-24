@@ -33,7 +33,7 @@ int isSameDir(int a, int k, int c) {
 
 }
 
-void chamCham(void) {
+int chamCham(void) {
 	clear();
 	printf("[ 참참참 2.0 ]\n\n");
 	printf("화살표가 가르키는 방향에 대한 방향키를 1초 안에 누르세요!\n\n");
@@ -125,6 +125,6 @@ void chamCham(void) {
 		printf("성공!!\n");
 		printf("나가려면 ESC 키를 누르세요.");
 		escToExit();
-
+		return 1;
 	}
 }
