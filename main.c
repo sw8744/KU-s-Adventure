@@ -196,16 +196,20 @@ int main(void) {
 		}
 		clear();
 
+		printAsciiXY(cutscene2, 0, 0);
+		printDialog(0, 24, "자라", "자. 보물 3개를 받았으니...");
+		printDialog(0, 24, "자라", "약속대로 C프로그래밍 기말고사 A+를 줄게!");
+		clear();
 		printAsciiXY(cutscene1, 0, 0);
-		clearPos(0, 24, 60, 30);
-		printDialog(0, 24, "KU", "A + 줘서 고마워 자라야!");
+		printDialog(0, 24, "KU", "자라야 A+ 줘서 고마워!");
 		spaceToStart();
-
 	}
 
 	clear();
 	printBanner(0, 0);
 	printf("\n\nGame Cleared!");
+	printf("나가려면 ESC 키를 누르세요.");
+	escToExit();
 
 	return 0;
 }

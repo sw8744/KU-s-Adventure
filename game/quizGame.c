@@ -53,7 +53,7 @@ void quizInit(struct quiz* quizs) {
     quizs[1].second = "박소연 교수님";
     quizs[1].third = "박소영 교수님";
     quizs[1].fourth = "오병국 교수님";
-    quizs[1].answer = 4;
+    quizs[1].answer = 3;
 
     quizs[2].question = "다음 중 대학생이 팀 프로젝트 소스 코드를 제출할 때 가장 신뢰도가 높은 최종 파일 이름은 무엇일까요?";
     quizs[2].first = "main.c";
