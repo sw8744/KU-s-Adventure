@@ -74,7 +74,8 @@ int main(void) {
 			switch (select) {
 			case 0: {
 				clear();
-				int coin = 10;
+				int coin = 0, key = 0, chance = 0;
+				int isGameCleared[12] = { 0 };
 				struct flag flags[FLAG_COUNT_EASY];
 				int x = DEFAULT_PLAYER_X_EASY, y = DEFAULT_PLAYER_Y_EASY;
 				struct coord playerPos = { x, y };
@@ -83,11 +84,15 @@ int main(void) {
 				placeFlag(flags, FLAG_COUNT_EASY);
 				placePlayer(playerPos);
 
-				while (1) {
+				while (!isEasyCleared) {
+					goToXY(0, 20);
+					printf("coin: %d / ", coin);
+					printf("key: %d", isGameCleared[10]);
+					goToXY(playerPos.x, playerPos.y);
 					int game = movePlayer(&playerPos.x, &playerPos.y, flags, FLAG_COUNT_EASY, WIDTH_EASY, HEIGHT_EASY).item_id;
 
 					if (game >= 0) {
-						gameStarter(game);
+						gameStarter(game, &coin, &key, chance, isGameCleared, &isEasyCleared);
 						clear();
 						placeStage(WIDTH_EASY, HEIGHT_EASY);
 						placeFlag(flags, FLAG_COUNT_EASY);
@@ -95,7 +100,6 @@ int main(void) {
 					}
 					
 				}
-				isEasyCleared = 1;
 				break;
 			}
 			case 1: {

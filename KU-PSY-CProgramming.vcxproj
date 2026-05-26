@@ -130,9 +130,13 @@
     <ClCompile Include="game\dud.c" />
     <ClCompile Include="game\holZzak.c" />
     <ClCompile Include="game\itemQuickPick.c" />
+    <ClCompile Include="game\pressKey.c" />
+    <ClCompile Include="game\quizGame.c" />
     <ClCompile Include="game\rockScissorsPaper.c" />
     <ClCompile Include="game\sniper.c" />
+    <ClCompile Include="game\treasure.c" />
     <ClCompile Include="game\typingPractice.c" />
+    <ClCompile Include="game\upDown.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="move.c" />
     <ClCompile Include="util.c" />

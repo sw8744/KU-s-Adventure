@@ -20,13 +20,16 @@
 #define FLAG "▶"
 #define PLAYER "◆"
 
+#define CLEAR_KEY 3
+#define FIRST_CLEAR_REWARD 100
+
 // dud
 #define DUD_SECONDS 10
 
-// itemQuickPick
-extern void initItems(int width_max, int height_max, struct flag* items, int count, struct coord playerPos);
-extern void move(struct coord playerPos, struct flag* items, int size);
-extern int checkItem(int x, int y, struct flag* items, int size);
+// pressKey
+#define HIT_COUNT 0
+#define TARGET_GOAL 50
+#define GAME_DURATION 10
 
 //typingPractice
 #define NUM_SENTENCES 8

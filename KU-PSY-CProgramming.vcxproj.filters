@@ -57,6 +57,18 @@
     <ClCompile Include="game\holZzak.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="game\upDown.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="game\pressKey.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="game\quizGame.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="game\treasure.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header.h">

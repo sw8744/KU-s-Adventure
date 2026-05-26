@@ -19,6 +19,14 @@ void printBox(int start_x, int start_y, char* value, int isDisabled) {
 	goToXY(start_x, start_y + 2);
 }
 
+void printQuizBox(int start_x, int start_y, char* value) {
+	goToXY(start_x, start_y);
+	printf("%s", quizBox);
+	goToXY(start_x + 6, start_y + 1);
+	printf("%s", value);
+	goToXY(start_x, start_y + 2);
+}
+
 void printDialog(int x, int y, char* name, char* conv) {
 	printAsciiXY(dialog, x, y);
 	goToXY(x + 1, y + 1);

@@ -8,14 +8,15 @@
 	11: 퀴즈
 */
 
-void gameStarter(int gameID) {
+void gameStarter(int gameID, int* coin, int* key, int chance, int* isGameCleared, int* isStageCleared) {
+	int rewardCoin = 0, isCleared = 0;
 	switch (gameID) {
 	case 0: {
 		dud();
 		break;
 	}
 	case 1: {
-		// TODO: 보물 클리어 관련 작업 필요
+		treasure(*key, isStageCleared);
 		break;
 	}
 	case 2: {
@@ -23,40 +24,55 @@ void gameStarter(int gameID) {
 		break;
 	}
 	case 3: {
-		holZzak();
+		isCleared = holZzak();
+		rewardCoin = 2;
 		break;
 	}
 	case 4: {
-		rockScissorsPaper();
+		isCleared = rockScissorsPaper();
+		rewardCoin = 2;
 		break;
 	}
 	case 5: {
-		chamCham();
+		isCleared = chamCham();
+		rewardCoin = 5;
 		break;
 	}
 	case 6: {
-		// TODO: 키 여러번 누르기 관련 작업 필요
+		isCleared = pressKey();
+		rewardCoin = 5;
 		break;
 	}
 	case 7: {
-		// TODO: 업다운 관련 작업 필요
+		isCleared = upDown();
+		rewardCoin = 7;
 		break;
 	}
 	case 8: {
-		sniper();
+		isCleared = sniper();
+		rewardCoin = 7;
 		break;
 	}
 	case 9: {
-		itemQuickPick();
+		isCleared = itemQuickPick();
+		rewardCoin = 10;
 		break;
 	}
 	case 10: {
-		typingPractice();
+		isCleared = typingPractice();
+		rewardCoin = 10;
 		break;
 	}
 	case 11: {
-		// TODO: 퀴즈 관련 작업 필요
+		isCleared = quiz();
+		rewardCoin = 10;
 		break;
 	}
+	}
+	clear();
+	if (isCleared) {
+		reward(coin, key, chance, rewardCoin, isGameCleared[gameID]);
+		isGameCleared[gameID] = 1;
+		clear();
 	}
 }
