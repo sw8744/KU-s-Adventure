@@ -5,7 +5,7 @@ void treasure(int key, int keyStandard, int* isCleared, time_t startTime, int ti
 	clear();
 	printf("[ 보물 ]\n\n");
 	printf("자라가 가져와 달라고 하는 보물입니다!\n");
-	printf("보물을 열기 위해서는 열쇠 3개가 필요합니다.\n\n");
+	printf("보물을 열기 위해서는 열쇠 %d개가 필요합니다.\n\n", keyStandard);
 
 	if (key >= keyStandard) {
 		printf("키 %d개를 다 모았군요!\n", keyStandard);
