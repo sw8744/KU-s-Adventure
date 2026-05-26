@@ -26,7 +26,6 @@
 #define FLAG "▶"
 #define PLAYER "◆"
 
-#define CLEAR_KEY 3
 #define FIRST_CLEAR_REWARD 100
 
 // dud

@@ -28,22 +28,28 @@ int typingPractice() {
         printf("[ 입력 ] ");
 
         time_t startTime = time(NULL);
-
+        
         gets_s(typing, MAX_LENGTH);
 
         time_t endTime = time(NULL);
         int duration = endTime - startTime;
+        int returnValue = 0;
 
         printf("\n[ 결과 ]\n");
-        if (duration > TIME_LIMIT)
+        if (duration > TIME_LIMIT) {
             printf("실패! 시간 초과! (%d초 걸림 / 10초 제한)\n", duration);
-        else if (strcmp(sentences[randomIndex], typing) == 0)
+        }
+        else if (strcmp(sentences[randomIndex], typing) == 0) {
             printf("성공! (%d초 걸림)\n", duration);
-        else
+            returnValue = 1;
+        }
+        else {
             printf("실패! 오타가 있습니다! (문장과 정확히 일치해야 합니다)\n");
-
+        }
+            
         printf("ESC 키를 누르면 나가집니다.\n");
         escToExit();
         clear();
+        return returnValue;
     }
 }
