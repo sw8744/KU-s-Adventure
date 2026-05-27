@@ -28,8 +28,8 @@ int main(void) {
 		printDialog(0, 24, "자라", "A+를 받고 싶다면 일감호에서 보물 3개를 얻어 와!");
 		clear();
 		printAsciiXY(cutscene1, 0, 0);
-		printDialog(0, 24, "KU", "휴! 언제 다 보물을 모으지...");
-		printDialog(0, 24, "KU", "그래도 A+를 받을 수만 있다면...");
+		printDialog(0, 24, "KU", "휴! 언제 다 보물을 모으지…");
+		printDialog(0, 24, "KU", "그래도 A+를 받을 수만 있다면…");
 		printDialog(0, 24, "KU", "가자! 보물을 찾으러 일감호로!");
 
 		int stageOrder[3] = { -1, -1, -1 };
@@ -234,13 +234,18 @@ int main(void) {
 		clear();
 
 		printAsciiXY(cutscene2, 0, 0);
-		printDialog(0, 24, "자라", "자. 보물 3개를 받았으니...");
-		printDialog(0, 24, "자라", "약속대로 C프로그래밍 기말고사 A+를 줄게!");
+		printDialog(0, 24, "자라", "보물 3개를 가져왔군!");
+		printDialog(0, 24, "자라", "너가 원하는 건 C프로그래밍 A+이지?");
+		printDialog(0, 24, "자라", "하지만 너는 보물을 찾으면서 성장하여");
+		printDialog(0, 24, "자라", "이미 A+를 받을 정도의 능력을 갖추게 되었어.");
+		printDialog(0, 24, "자라", "기말고사도 화이팅!");
 		clear();
 		printAsciiXY(cutscene1, 0, 0);
-		printDialog(0, 24, "KU", "자라야 A+ 줘서 고마워!");
-		spaceToStart();
+		printDialog(0, 24, "KU", "내가 그 정도 실력이 되었다고…?");
+		printDialog(0, 24, "KU", "생각해 보니 내 C언어 실력도 확실히 성장한 것 같아.");
+		printDialog(0, 24, "KU", "자라야 고마워!");
 		clear();
+		printDialog(0, 24, "", "과연 KU는 A+을 맞을 수 있을까?");
 		printBanner(0, 0);
 		printf("\n\nGame Cleared!");
 	}
