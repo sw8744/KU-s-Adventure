@@ -32,7 +32,7 @@ int pressKey() {
                 if (inputKey == ' ') {
                     hitCount++;
 
-                    printf("\r현재 연타 횟수: [%d / %d]", hitCount, TARGET_GOAL);
+                    printf("\r현재 연타 횟수: [%2d / %2d]", hitCount, TARGET_GOAL);
                     fflush(stdout);
                 }
 
@@ -47,11 +47,11 @@ int pressKey() {
         // 결과 출력
         time_t totalTime = time(NULL) - startTime;
         if (hitCount >= TARGET_GOAL) {
-            printf("축하합니다! 걸린 시간: [ %d초 ]!\n", totalTime);
+            printf("축하합니다! 걸린 시간: [ %2d초 ]!\n", totalTime);
             returnValue = 1;
         }
         else {
-            printf("\n시간 초과... (최종 %d회 연타)\n", hitCount);
+            printf("\n시간 초과... (최종 %2d회 연타)\n", hitCount);
         }
 
         printf("나가려면 ESC 키를 누르세요.");
