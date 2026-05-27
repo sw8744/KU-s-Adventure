@@ -112,13 +112,15 @@ int main(void) {
 
 				time_t startTime = time(NULL);
 				while (!isEasyCleared) {
-					goToXY(WIDTH_HARD + 5, HEIGHT_HARD / 2 - 3);
+					goToXY(WIDTH_EASY + 5, HEIGHT_EASY / 2 - 3);
 					printf("[ 나의 정보 ]");
-					goToXY(WIDTH_HARD + 5, HEIGHT_HARD / 2 - 1);
+					goToXY(WIDTH_EASY + 5, HEIGHT_EASY / 2 - 1);
 					printf("난도 : 쉬움");
-					goToXY(WIDTH_HARD + 5, HEIGHT_HARD / 2);
+					goToXY(WIDTH_EASY + 5, HEIGHT_EASY / 2);
+					printf("열쇠 : %3d개", key);
+					goToXY(WIDTH_EASY + 5, HEIGHT_EASY / 2 + 1);
 					printf("코인 : %3d개", coin);
-					goToXY(WIDTH_HARD + 5, HEIGHT_HARD / 2 + 1);
+					goToXY(WIDTH_EASY + 5, HEIGHT_EASY / 2 + 2);
 					printf("확률 : %3d%%", chance);
 					
 					goToXY(playerPos.x, playerPos.y);
@@ -149,13 +151,15 @@ int main(void) {
 
 				time_t startTime = time(NULL);
 				while (!isNormalCleared) {
-					goToXY(WIDTH_HARD + 5, HEIGHT_HARD / 2 - 3);
+					goToXY(WIDTH_NORMAL + 5, HEIGHT_NORMAL / 2 - 3);
 					printf("[ 나의 정보 ]");
-					goToXY(WIDTH_HARD + 5, HEIGHT_HARD / 2 - 1);
+					goToXY(WIDTH_NORMAL + 5, HEIGHT_NORMAL / 2 - 1);
 					printf("난도 : 보통");
-					goToXY(WIDTH_HARD + 5, HEIGHT_HARD / 2);
+					goToXY(WIDTH_NORMAL + 5, HEIGHT_NORMAL / 2);
+					printf("열쇠 : %3d개", key);
+					goToXY(WIDTH_NORMAL + 5, HEIGHT_NORMAL / 2 + 1);
 					printf("코인 : %3d개", coin);
-					goToXY(WIDTH_HARD + 5, HEIGHT_HARD / 2 + 1);
+					goToXY(WIDTH_NORMAL + 5, HEIGHT_NORMAL / 2 + 2);
 					printf("확률 : %3d%%", chance);
 
 					goToXY(playerPos.x, playerPos.y);
@@ -191,8 +195,10 @@ int main(void) {
 					goToXY(WIDTH_HARD + 5, HEIGHT_HARD / 2 - 1);
 					printf("난도 : 어려움");
 					goToXY(WIDTH_HARD + 5, HEIGHT_HARD / 2);
-					printf("코인 : %3d개", coin);
+					printf("열쇠 : %3d개", key);
 					goToXY(WIDTH_HARD + 5, HEIGHT_HARD / 2 + 1);
+					printf("코인 : %3d개", coin);
+					goToXY(WIDTH_HARD + 5, HEIGHT_HARD / 2 + 2);
 					printf("확률 : %3d%%", chance);
 
 					goToXY(playerPos.x, playerPos.y);
