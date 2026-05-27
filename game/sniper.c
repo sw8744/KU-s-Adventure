@@ -5,6 +5,7 @@ int sniper() {
     clear();
 
     int isHorizontalAligned = 0, isVerticalAligned = 0;
+    int returnValue = 0;
 
     printf("[ 스나이퍼 ]\n\n");
     printf("자라가 먹이 사냥에 어려움을 겪고 있네요!\n");
@@ -14,6 +15,7 @@ int sniper() {
     if (spaceToStart()) {
         clear();
         int x = 1, y = 5;
+
         printAsciiXY(sniperHorizontal, 0, 4);
         printAsciiXY(sniperVertical, 6, 0);
         goToXY(x, y);
@@ -75,6 +77,7 @@ int sniper() {
         goToXY(0, 13);
         if (isHorizontalAligned && isVerticalAligned) {
             printf("조준경 정렬에 성공했습니다!\n\n");
+            returnValue = 1;
         }
         else {
             printf("조준경 정렬에 실패했습니다!\n\n");
@@ -82,4 +85,5 @@ int sniper() {
         printf("나가려면 ESC 키를 누르세요.");
         escToExit();
     }
+    return returnValue;
 }

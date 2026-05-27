@@ -9,7 +9,7 @@ void goToXY(int x, int y) {
 struct flag movePlayer(int* x, int* y, struct flag* flags, int flagSize, int width, int height) {
 	while (1) {
 		int ch = _getch();
-;		if (ch == 27) {
+;		if (ch == 'q') {
 			struct flag fakeFlag = { -1, -1, -1 };
 			return fakeFlag;
 		}
