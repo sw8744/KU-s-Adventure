@@ -38,7 +38,6 @@ int main(void) {
 		for (int i = 0; i < 3; i++) {
 			clear();
 
-
 			// 난이도 선택
 			printBanner(0, 0);
 			printBox(0, 7, "쉬움", isEasySelected);
@@ -246,6 +245,7 @@ int main(void) {
 		printDialog(0, 24, "KU", "자라야 고마워!");
 		clear();
 		printDialog(0, 24, "", "과연 KU는 A+을 맞을 수 있을까?");
+		clear();
 		printBanner(0, 0);
 		printf("\n\nGame Cleared!");
 	}
