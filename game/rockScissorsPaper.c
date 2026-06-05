@@ -87,16 +87,13 @@ int rockScissorsPaper() {
 		if ((com - play == 1) || (com - play == -2)) { // 패배
 
 			printf("자라 : 너의 패배야                  \n");
-			playFailSound();
 		}
 		else if (com == play) { // draw
 			printf("자라 : 무승부야                    \n");
-			playFailSound();
 		}
 		else if ((com - play == -1) || (com - play == 2)) {
 			printf("자라 : 너의 승리야                    \n");
 			returnValue = 1;
-			playClearSound();
 		}
 
 		goToXY(0, 11);

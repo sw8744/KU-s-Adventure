@@ -17,7 +17,6 @@ void dud() {
 
     int randomIndex = rand() % 6;
     printf("%s\n\n", dud[randomIndex]);
-    playFailSound();
 
     printf("나가려면 %d초를 기다려야 합니다.\n\n", DUD_SECONDS);
     Sleep(DUD_SECONDS * 1000);

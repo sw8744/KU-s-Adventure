@@ -143,7 +143,6 @@
     <ClCompile Include="game\upDown.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="move.c" />
-    <ClCompile Include="sound.c" />
     <ClCompile Include="util.c" />
     <ClCompile Include="visual.c" />
   </ItemGroup>

@@ -30,11 +30,9 @@ int quiz() {
         if (select + 1 == quizs[quizNum].answer) {
             printf("정답입니다!\n");
             returnValue = 1;
-            playClearSound();
         }
         else {
             printf("오답입니다!\n");
-            playFailSound();
         }
         printf("나가려면 ESC 키를 누르세요.");
         escToExit();

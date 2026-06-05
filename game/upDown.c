@@ -61,12 +61,10 @@ int upDown(void) {
 				else if (result == 2) {
 					goToXY(0, 5);
 					printf("UP    \b\b\b\b");
-					playBeepSound();
 				}
 				else if (result == 3) {
 					goToXY(0, 5);
 					printf("DOWN    \b\b\b\b");
-					playBeepSound();
 				}
 			}
 		} while (1);
@@ -74,7 +72,6 @@ int upDown(void) {
 		goToXY(0, 6);
 		printf("정확합니다!!\n\n");
 		printf("나가려면 ESC 키를 누르세요.");
-		playSuccessSound();
 		escToExit();
 		return 1;
 	}

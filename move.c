@@ -18,7 +18,6 @@ struct flag movePlayer(int* x, int* y, struct flag* flags, int flagSize, int wid
 			return fakeFlag;
 		}
 		if (ch == 224) {
-			playBeepSound();
 			ch = _getch();
 			switch (ch) {
 			case 72: {

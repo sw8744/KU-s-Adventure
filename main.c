@@ -5,7 +5,6 @@ int main(void) {
 	int isEasyCleared = 0, isNormalCleared = 0, isHardCleared = 0;
 	int isEasySelected = 0, isNormalSelected = 0, isHardSelected = 0;
 	srand((unsigned)time(NULL));
-	initSound();
 	// 게임 시작 여부 선택
 	printBanner(0, 0);
 	printBox(0, 7, "시작", 0);

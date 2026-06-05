@@ -77,21 +77,18 @@ int holZzak(void) {
 			}
 			
 			if ((choice == 1) || (choice == 2)){
-				playCoinShakingSound();
 				s = isHolZzakSame(coin, choice);
 				if (s == 1) {
 					clear();
 					openCup(coin);
 					goToXY(0, 10);
 					printf("성공!!\n\n");
-					playClearSound();
 					returnValue = 1;
 				}
 				else {
 					clear();
 					openCup(coin);
 					goToXY(0, 10);
-					playFailSound();
 					printf("실패!!\n\n");
 				}
 				break;

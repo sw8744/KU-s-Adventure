@@ -31,13 +31,9 @@ int pressKey() {
 
                 if (inputKey == ' ') {
                     hitCount++;
-                    playSuccessSound();
 
                     printf("\r현재 연타 횟수: [%2d / %2d]", hitCount, TARGET_GOAL);
                     fflush(stdout);
-                }
-                else {
-                    playBeepSound();
                 }
 
                 // 목표치 달성 시 즉시 게임 종료
@@ -53,11 +49,9 @@ int pressKey() {
         if (hitCount >= TARGET_GOAL) {
             printf("축하합니다! 걸린 시간: [ %2d초 ]!\n", totalTime);
             returnValue = 1;
-            playClearSound();
         }
         else {
             printf("\n시간 초과... (최종 %2d회 연타)\n", hitCount);
-            playFailSound();
         }
 
         printf("나가려면 ESC 키를 누르세요.");

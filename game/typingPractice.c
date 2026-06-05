@@ -42,11 +42,9 @@ int typingPractice() {
         else if (strcmp(sentences[randomIndex], typing) == 0) {
             printf("성공! (%d초 걸림)\n", duration);
             returnValue = 1;
-            playClearSound();
         }
         else {
             printf("실패! 오타가 있습니다! (문장과 정확히 일치해야 합니다)\n");
-            playFailSound();
         }
             
         printf("ESC 키를 누르면 나가집니다.\n");

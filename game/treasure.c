@@ -13,12 +13,10 @@ void treasure(int key, int keyStandard, int* isCleared, time_t startTime, int ti
 		if (deltaTime <= timeStandard) {
 			printf("%d초 걸려 %d초 안에 깨셨어요! 보물을 드릴게요!\n", deltaTime, timeStandard);
 			*isCleared = 1;
-			playClearSound();
 		}
 		else {
 			printf("%d초 걸려 %d초 안에 깨지 못했어요... 다시 시도해 보세요!\n", deltaTime, timeStandard);
 			*isCleared = -1;
-			playFailSound();
 		}
 	}
 	else {
