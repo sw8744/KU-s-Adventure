@@ -105,9 +105,9 @@ int main(void) {
 				int x = DEFAULT_PLAYER_X_EASY, y = DEFAULT_PLAYER_Y_EASY;
 				struct coord playerPos = { x, y };
 				initFlags(WIDTH_EASY, HEIGHT_EASY, flags, FLAG_COUNT_EASY, playerPos);
-				placeStage(WIDTH_EASY, HEIGHT_EASY);
 				placeFlag(flags, FLAG_COUNT_EASY);
 				placePlayer(playerPos);
+				placeStage(WIDTH_EASY, HEIGHT_EASY);
 
 				time_t startTime = time(NULL);
 				while (!isEasyCleared) {
@@ -128,9 +128,9 @@ int main(void) {
 					if (game >= -2) {
 						gameStarter(game, &coin, &key, KEY_STANDARD_EASY, &chance, isGameCleared, &isEasyCleared, startTime, TIME_STANDARD_EASY);
 						clear();
-						placeStage(WIDTH_EASY, HEIGHT_EASY);
 						placeFlag(flags, FLAG_COUNT_EASY);
 						placePlayer(playerPos);
+						placeStage(WIDTH_EASY, HEIGHT_EASY);
 					}
 				}
 				gameIndex += isEasyCleared;
@@ -144,9 +144,9 @@ int main(void) {
 				int x = DEFAULT_PLAYER_X_NORMAL, y = DEFAULT_PLAYER_Y_NORMAL;
 				struct coord playerPos = { x, y };
 				initFlags(WIDTH_NORMAL, HEIGHT_NORMAL, flags, FLAG_COUNT_NORMAL, playerPos);
-				placeStage(WIDTH_NORMAL, HEIGHT_NORMAL);
 				placeFlag(flags, FLAG_COUNT_NORMAL);
 				placePlayer(playerPos);
+				placeStage(WIDTH_NORMAL, HEIGHT_NORMAL);
 
 				time_t startTime = time(NULL);
 				while (!isNormalCleared) {
@@ -167,9 +167,9 @@ int main(void) {
 					if (game >= -2) {
 						gameStarter(game, &coin, &key, KEY_STANDARD_NORMAL, &chance, isGameCleared, &isNormalCleared, startTime, TIME_STANDARD_NORMAL);
 						clear();
-						placeStage(WIDTH_NORMAL, HEIGHT_NORMAL);
 						placeFlag(flags, FLAG_COUNT_NORMAL);
 						placePlayer(playerPos);
+						placeStage(WIDTH_NORMAL, HEIGHT_NORMAL);
 					}
 				}
 				gameIndex += isNormalCleared;
@@ -183,9 +183,9 @@ int main(void) {
 				int x = DEFAULT_PLAYER_X_HARD, y = DEFAULT_PLAYER_Y_HARD;
 				struct coord playerPos = { x, y };
 				initFlags(WIDTH_HARD, HEIGHT_HARD, flags, FLAG_COUNT_HARD, playerPos);
-				placeStage(WIDTH_HARD, HEIGHT_HARD);
 				placeFlag(flags, FLAG_COUNT_HARD);
 				placePlayer(playerPos);
+				placeStage(WIDTH_HARD, HEIGHT_HARD);
 
 				time_t startTime = time(NULL);
 				while (!isHardCleared) {
@@ -206,9 +206,9 @@ int main(void) {
 					if (game >= -2) {
 						gameStarter(game, &coin, &key, KEY_STANDARD_HARD, &chance, isGameCleared, &isHardCleared, startTime, TIME_STANDARD_HARD);
 						clear();
-						placeStage(WIDTH_HARD, HEIGHT_HARD);
 						placeFlag(flags, FLAG_COUNT_HARD);
 						placePlayer(playerPos);
+						placeStage(WIDTH_HARD, HEIGHT_HARD);
 					}
 				}
 				gameIndex += isHardCleared;

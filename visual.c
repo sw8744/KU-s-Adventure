@@ -62,12 +62,13 @@ void placeStage(int width, int height) {
 	printf("\n");
 
 	for (int i = 1; i < height - 1; i++) {
+		goToXY(0, i);
 		printf("%s", STAGE_WALL);
-		for (int j = 1; j < width - 1; j++) {
-			printf(" ");
-		}
-		printf("%s\n", STAGE_WALL);
+		goToXY(width - 1, i);
+		printf("%s", STAGE_WALL);
 	}
+
+	printf("\n");
 
 	for (int i = 0; i < width; i++) {
 		printf("%s", STAGE_WALL);
